@@ -21,7 +21,7 @@ myApp.factory('usersList', function(){
     ]
 });
 
-myApp.controller('LoginCtrl', function ($scope, $location, usersList) {
+myApp.controller('LoginCtrl', function ($scope, usersList) {
 
     $scope.header = 'Uptime Login';
 
