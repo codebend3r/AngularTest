@@ -21,6 +21,18 @@ myApp.factory('usersList', function(){
     ]
 });
 
+myApp.controller('MainCtrl', function ($scope, usersList) {
+
+    $scope.title = 'Home';
+
+});
+
+myApp.controller('DashboardCtrl', function ($scope, usersList) {
+
+    $scope.title = 'Dashboard';
+
+});
+
 myApp.controller('LoginCtrl', function ($scope, usersList) {
 
     $scope.header = 'Uptime Login';
