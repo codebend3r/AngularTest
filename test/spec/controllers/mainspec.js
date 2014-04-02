@@ -1,22 +1,25 @@
-'use strict';
+/**
+ * Created by crivas on 4/2/2014.
+ */
 
+'use strict';
 
 describe('Verify Successful Login', function () {
 
     // load the controller's module
     beforeEach(module('angularTestApp'));
 
-    var MainCtrl,
+    var LoginCtrl,
         scope,
         user;
 
-    beforeEach(inject(function ($controller, $rootScope, usersList) {
-        scope = $rootScope.$new();
-        user = usersList;
-        MainCtrl = $controller('LoginCtrl', {
-            $scope: scope
+    beforeEach(inject(function ($controller, $rootScope, usersList) { // 'beforeEach' function is literally called before each 'it' function
+        scope = $rootScope.$new(); // instantiate new scope
+        user = usersList; // custom dependency
+        LoginCtrl = $controller('LoginCtrl', { // reference to login controller
+            $scope: scope // save new scope to login controller
         });
-    }));
+    }));;
 
     it('should return oh hello!', function () {
         expect(scope.hello()).toBe('oh hello!');

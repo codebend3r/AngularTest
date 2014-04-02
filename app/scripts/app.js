@@ -18,6 +18,10 @@ myApp.config(function ($routeProvider) {
             controller: 'LoginCtrl'
         })
         .otherwise({
+<<<<<<< HEAD
             redirectTo: '/home'
+=======
+            redirectTo: '/login'
+>>>>>>> updated views and commented spec to match doc
         });
 });

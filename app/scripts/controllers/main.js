@@ -1,3 +1,7 @@
+/**
+ * Created by crivas on 4/2/2014.
+ */
+
 'use strict';
 
 myApp.factory('usersList', function(){
@@ -35,7 +39,7 @@ myApp.controller('DashboardCtrl', function ($scope, usersList) {
 
 myApp.controller('LoginCtrl', function ($scope, usersList) {
 
-    $scope.header = 'Uptime Login';
+    $scope.title = 'Uptime Login';
 
     $scope.credentials = {
         username: '',
