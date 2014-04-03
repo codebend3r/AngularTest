@@ -9,19 +9,12 @@ var myApp = angular.module('angularTestApp', [
 
 myApp.config(function ($routeProvider) {
     $routeProvider
-        .when('/home', {
-            templateUrl: 'views/main.html',
-            controller: 'MainCtrl'
-        })
         .when('/login', {
             templateUrl: 'views/login.html',
             controller: 'LoginCtrl'
         })
         .otherwise({
-<<<<<<< HEAD
-            redirectTo: '/home'
-=======
             redirectTo: '/login'
->>>>>>> updated views and commented spec to match doc
-        });
+        })
+
 });
