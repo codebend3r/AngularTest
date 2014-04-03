@@ -7,6 +7,10 @@
 myApp.factory('usersList', function(){
     return [
         {
+            username: 'uptime',
+            password: 'uptime'
+        },
+        {
             username: 'Bender',
             password: 'Rodriguez'
         },
@@ -25,18 +29,6 @@ myApp.factory('usersList', function(){
     ]
 });
 
-myApp.controller('MainCtrl', function ($scope, usersList) {
-
-    $scope.title = 'Home';
-
-});
-
-myApp.controller('DashboardCtrl', function ($scope, usersList) {
-
-    $scope.title = 'Dashboard';
-
-});
-
 myApp.controller('LoginCtrl', function ($scope, usersList) {
 
     $scope.title = 'Uptime Login';
@@ -50,20 +42,16 @@ myApp.controller('LoginCtrl', function ($scope, usersList) {
         return 'oh hello!';
     };
 
+    $scope.loggedIn = false;
+
     $scope.login = function () {
-        var success = false;
-        if ($scope.credentials.username === 'uptime' && $scope.credentials.password === 'uptime') {
-            success = true;
-            return success;
-        } else {
-            usersList.forEach(function(element){
-                if ($scope.credentials.username === element.username && $scope.credentials.password === element.password) {
-                    success = true;
-                    return success;
-                }
-            });
-            return success;
-        }
+        usersList.forEach(function(element){
+            if ($scope.credentials.username === element.username && $scope.credentials.password === element.password) {
+                $scope.loggedIn = true;
+                return $scope.loggedIn;
+            }
+        });
+        return $scope.loggedIn;
     };
 
 });

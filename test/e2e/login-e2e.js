@@ -4,11 +4,11 @@
 
 'use strict';
 
-describe('e2e Login Test', function () {
+describe('login test', function () {
 
     beforeEach(function () {
         browser.get('#/login');
-        //browser.waitForAngular();
+        browser.waitForAngular();
     });
 
     it('should show login when you navigate to login', function () {
@@ -21,17 +21,17 @@ describe('e2e Login Test', function () {
     });
 
     it('logged in confirmation should be visible when entering correct username and password and clicking submit', function () {
-        browser.$('#exampleInputUser').sendKeys('uptime');
-        browser.$('#exampleInputPassword').sendKeys('uptime');
+        browser.$('#exampleInputUser').sendKeys('uptime'); // type into input fields
+        browser.$('#exampleInputPassword').sendKeys('uptime'); // type into input fields
         browser.$('.btn').click();
-        expect(browser.$('.logged-in').isDisplayed()).toBe(true);
+        expect(browser.$('.logged-in').isDisplayed()).toBe(true); // all elements have the property method isDisplayed
     });
 
     it('logged in confirmation should be hidden when entering wrong username and password and clicking submit', function () {
-        browser.$('#exampleInputUser').sendKeys('dfasdfsf');
-        browser.$('#exampleInputPassword').sendKeys('dfasfsdfe');
-        browser.$('.btn').click();
-        expect(browser.$('.logged-in')).toBeDefined();
+        browser.$('#exampleInputUser').sendKeys('dfasdfsf'); // type into input fields
+        browser.$('#exampleInputPassword').sendKeys('dfasfsdfe'); // type into input fields
+        browser.$('.btn').click(); // simulate clicking the submit button
+        expect(browser.$('.logged-in').isPresent()).toBe(false); // all elements have the property method isPresent
     });
 
 });
