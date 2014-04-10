@@ -31,22 +31,24 @@ Getting Started
 Install Karma and Jasmine
 =========================
 
-    Install Karma
+Install Karma
 
-    `npm install -g karma
-    npm install karma-jasmine --save-dev`
+    npm install -g karma
+    npm install karma-jasmine --save-dev
 
-    Install Karma Launcher (Optional)
+Install Karma Launcher (Optional)
 
-    `npm install karma-phantomjs-launcher --save-dev
-    npm install karma-chrome-launcher --save-dev // install both chrome and chrome canary
+    npm install karma-phantomjs-launcher --save-dev
+    npm install karma-chrome-launcher --save-dev // installs both chrome and chrome canary
     npm install karma-IE-launcher --save-dev
-    npm install karma-firefox-launcher --save-dev`
+    npm install karma-firefox-launcher --save-dev
 
-    Install Karma Coverage
-    `npm install karma-coverage --save-dev`
+Install Karma Coverage
 
-    Install Protractor
-    `npm install protractor -g
+    npm install karma-coverage --save-dev
+
+Install Protractor
+
+    npm install protractor -g
     webdriver-manager update
-    npm install grunt-protractor-runner`
+    npm install grunt-protractor-runner
