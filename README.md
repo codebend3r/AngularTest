@@ -7,37 +7,37 @@ Getting Started
 
 Download Node (<http://nodejs.org/>) - note\* NPM is included in the node.js
 
-Download RubyInstaller (<http://rubyinstaller.org/>) RubyInstaller includes gems
+Download RubyInstaller (<http://rubyinstaller.org/>) note\* RubyInstaller includes gems
 
 Install NPM
-===========
+------------
 
     npm install
 
 Install Compass and SASS
-========================
+------------
 
     gem install compass
     gem install sass
 
 Install Yeoman
-==============
+------------
 
     npm install -g yo
 
 Install Bower (Optional)
-=====================
+------------
 
     bower install
 
 Install Grunt (Optional)
-===============================
+------------
 
     npm install grunt --save-dev
     npm install -g grunt-cli
 
 Install Karma and Protractor
-=========================
+------------
 
 Karma
 
@@ -62,7 +62,7 @@ Protractor
     npm install grunt-protractor-runner
 
 Running Tasks
-=========================
+------------
 
 Run Server
     grunt server
