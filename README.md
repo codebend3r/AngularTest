@@ -65,12 +65,15 @@ Running Tasks
 ------------
 
 Run Server
+
     grunt server
 
 Run Karma
+
     grunt karma
 
 Run Protractor
+
     grunt protractor
 
 **NOTE - you just run grunt server then grunt protractor until we figure out how to make it into one task
