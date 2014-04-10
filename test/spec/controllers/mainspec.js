@@ -19,7 +19,7 @@ describe('Verify Successful Login', function () {
         LoginCtrl = $controller('LoginCtrl', { // reference to login controller
             $scope: scope // save new scope to login controller
         });
-    }));;
+    }));
 
     it('should return oh hello!', function () {
         expect(scope.hello()).toBe('oh hello!');
