@@ -5,50 +5,72 @@ PoC for getting started with unit testing and e2e test.
 Getting Started
 ===============
 
-1. Install Node (<http://nodejs.org/>) - note\* NPM is included in the node.js
+Download Node (<http://nodejs.org/>) - note\* NPM is included in the node.js
 
-2. Download package from site and install
+Download RubyInstaller (<http://rubyinstaller.org/>) RubyInstaller includes gems
 
-3. Install Compass and Ruby (<http://compass-style.org/install/>)
+Install NPM
+===========
 
-    `gem install compass`
+    npm install
 
-4. Install Yeoman (<http://yeoman.io/>)
+Install Compass and SASS
+========================
 
-    `npm install -g yo`
+    gem install compass
+    gem install sass
 
-5. Install SASS (<http://sass-lang.com/install>)
+Install Yeoman
+==============
 
-6. Install Grunt and Grunt Packages
+    npm install -g yo
 
-    `npm install
+Install Bower (Optional)
+=====================
 
     bower install
 
-    npm install grunt --save-dev
-    npm install -g grunt-cli`
+Install Grunt (Optional)
+===============================
 
-Install Karma and Jasmine
+    npm install grunt --save-dev
+    npm install -g grunt-cli
+
+Install Karma and Protractor
 =========================
 
-Install Karma
+Karma
 
     npm install -g karma
     npm install karma-jasmine --save-dev
 
-Install Karma Launcher (Optional)
+Karma Launchers (Optional)
 
     npm install karma-phantomjs-launcher --save-dev
     npm install karma-chrome-launcher --save-dev // installs both chrome and chrome canary
     npm install karma-IE-launcher --save-dev
     npm install karma-firefox-launcher --save-dev
 
-Install Karma Coverage
+Karma Coverage
 
     npm install karma-coverage --save-dev
 
-Install Protractor
+Protractor
 
     npm install protractor -g
     webdriver-manager update
     npm install grunt-protractor-runner
+
+Running Tasks
+=========================
+
+Run Server
+    grunt server
+
+Run Karma
+    grunt karma
+
+Run Protractor
+    grunt protractor
+
+**NOTE - you just run grunt server then grunt protractor until we figure out how to make it into one task
