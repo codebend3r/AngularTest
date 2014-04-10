@@ -25,12 +25,12 @@ Install Yeoman
 
     npm install -g yo
 
-Install Bower (Optional)
+Install Bower
 ------------
 
     bower install
 
-Install Grunt (Optional)
+Install Grunt
 ------------
 
     npm install grunt --save-dev
